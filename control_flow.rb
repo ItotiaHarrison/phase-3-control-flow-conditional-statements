@@ -2,11 +2,12 @@ def admin_login(username, password)
   # your code here
   if username == "admin" && password == "12345"
      "Access granted"
-  elsif username == "ADMIN" || password == "12345"
+  elsif username == "ADMIN" && password == "12345"
      "Access granted"
   else
      "Access denied"
   end
+end
 
 def hows_the_weather(temperature)
   # your code here
@@ -19,6 +20,7 @@ def hows_the_weather(temperature)
   else
     "It's perfect out there!"
   end
+end
 
 def fizzbuzz(num)
   # your code here
@@ -29,8 +31,9 @@ def fizzbuzz(num)
   elsif num % 5 == 0
     "Buzz"
   else
-    nil
+    num
   end
+end
 
 def calculator(operation, num1, num2)
   # your code here
@@ -43,6 +46,7 @@ def calculator(operation, num1, num2)
   elsif operation === "/"
     return num1 / num2
   else
-    puts "Invalid operation"
+    puts "Invalid operation!"
   end
+end
 
